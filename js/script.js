@@ -13,9 +13,9 @@ const observe = function (entries, observer) {
   });
 };
 const options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.9,
+  // Add root here so rootBounds in entry object is not null
+  root: document.body,
+  threshold: 0.000001,
 };
 
 const observer = new IntersectionObserver(observe, options);

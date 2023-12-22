@@ -12,7 +12,12 @@ const observe = function (entries, observer) {
     }
   });
 };
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.9,
+};
 
-const observer = new IntersectionObserver(observe);
+const observer = new IntersectionObserver(observe, options);
 const images = document.querySelectorAll("img.lazy");
 images.forEach((image) => observer.observe(image));

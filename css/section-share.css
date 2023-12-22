@@ -19,7 +19,28 @@
   font-size: 16px;
 }
 
+.section__share .item span {
+  font-family: "Montserrat Bold";
+}
+
 .section__share .item:first-child {
   flex: 0 1 390px;
   padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__share .container {
+    flex-direction: column;
+    gap: 38px;
+    margin-bottom: 138px;
+  }
+
+  .section__share .item {
+    font-size: 12px;
+  }
+
+  .section__share .item:first-child {
+    flex: none;
+    padding: 0;
+  }
 }

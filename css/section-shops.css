@@ -59,3 +59,48 @@
 .section__shops .item__logo img {
   object-fit: contain;
 }
+
+@media screen and (max-width: 1200px) {
+  .section__shops .wrapper {
+    padding: 60px 0 224px;
+  }
+
+  .section__shops .container {
+    gap: 57px;
+    overflow: hidden;
+  }
+
+  .section__shops .item__logo {
+    margin-right: -60px;
+  }
+
+  .section__shops .item:first-child {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__shops .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section__shops .item > p {
+    margin-bottom: 27px;
+    font-size: 12px;
+  }
+
+  .section__shops .item > h4 {
+    margin-bottom: 27px;
+    font-size: 12px;
+  }
+
+  .section__shops .item__logo {
+    margin-right: -60px;
+    margin-left: -60px;
+  }
+
+  .section__shops .wrapper::after {
+    background-size: 100% 60%;
+  }
+}

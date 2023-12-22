@@ -19,3 +19,15 @@
 .section__return .item h2 {
   margin-bottom: var(--main-space);
 }
+
+@media screen and (max-width: 768px) {
+  .section__return .container {
+    padding: 78px 36px 116px;
+    background-position: 85% 200%;
+    background-size: auto;
+  }
+
+  .section__return .item {
+    width: 100%;
+  }
+}

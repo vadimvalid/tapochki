@@ -5,7 +5,7 @@
   background-image: url("../images/bg-vertical.png");
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50%;
 }
 
 .section__about .wrapper::after {
@@ -22,11 +22,13 @@
 }
 
 .section__about .block {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 450px;
   margin-bottom: 106px;
+  z-index: 1;
 }
 
 .section__about .block > img {
@@ -39,7 +41,39 @@
   padding: 30px 40px;
   background-color: var(--main-color);
   border-radius: 82px;
+  font-family: "Montserrat SemiBold";
   font-size: 18px;
   color: var(--black);
   z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .section__about .block__about {
+    width: clamp(272px, 50%, 668px);
+  }
+
+  .section__about .wrapper::after {
+    background-size: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__about .wrapper {
+    padding: 40px 0 176px;
+    background-image: url("../images/bg-vertical-mobile.png");
+    background-position: right bottom;
+    background-size: 50% 100%;
+  }
+
+  .section__about .block__about {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 58px;
+    font-size: 12px;
+  }
+
+  .section__about .block {
+    max-width: unset;
+    margin-bottom: 137px;
+  }
 }

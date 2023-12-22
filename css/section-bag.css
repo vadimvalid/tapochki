@@ -26,3 +26,26 @@
 .section__bag .item p {
   font-size: 16px;
 }
+
+@media screen and (max-width: 768px) {
+  .section__bag .wrapper {
+    padding: 0 0 60px;
+  }
+
+  .section__bag .container {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .section__bag .item:first-child {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .section__bag .item p {
+    font-size: 12px;
+  }
+}

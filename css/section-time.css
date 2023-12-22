@@ -9,7 +9,7 @@
 
 .section__time .items {
   display: flex;
-  gap: 25px;
+  gap: 58px;
 }
 
 .section__time .items .item {
@@ -53,8 +53,50 @@
 }
 
 .section__time .bottom {
+  align-items: center;
   width: 142px;
   font-size: 12px;
   text-align: center;
   font-family: "Montserrat Light";
+}
+
+.section__time .wrap {
+  display: flex;
+  gap: 0;
+}
+
+.section__time .items .item:not(:first-child) {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .section__time .container {
+    gap: 28px;
+  }
+
+  .section__time .items {
+    gap: 78px;
+  }
+
+  .section__time .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section__time .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section__time .container {
+    align-items: center;
+    gap: 36px;
+  }
+
+  .section__time .wrapper {
+    padding: 80px 0 188px;
+  }
 }

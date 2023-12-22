@@ -56,3 +56,22 @@
   line-height: 1.1;
   color: var(--main-color);
 }
+
+@media screen and (max-width: 1200px) {
+  .section__delivery .goods .item > h4 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__delivery .goods .item {
+    height: 260px;
+    padding: 90px 42px 0;
+    border-radius: 180px 180px 0 0;
+    background-size: 50%;
+  }
+
+  .section__delivery .goods .item > h4 {
+    font-size: 20px;
+  }
+}

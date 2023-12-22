@@ -42,6 +42,10 @@
   background-position: right bottom;
 }
 
+.section__top .item > p {
+  font-family: "Montserrat Regular", sans-serif;
+}
+
 /* Mouse */
 
 .mouse_scroll {

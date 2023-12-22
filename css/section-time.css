@@ -28,3 +28,18 @@
 .section__time .bottom > img {
   max-height: 134px;
 }
+
+.section__time .item--wrap {
+  display: flex;
+  gap: 8px;
+}
+
+.section__time .item--wrap > p:first-child {
+  font-family: "Akony", sans-serif;
+  font-size: 52px;
+  color: var(--orange);
+}
+
+.section__time .item--wrap > p:last-child {
+  margin-top: 10px;
+}

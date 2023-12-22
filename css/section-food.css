@@ -1,0 +1,34 @@
+.section__food .wrapper {
+  padding: 86px 0 125px;
+  color: var(--black);
+}
+
+.section__food h2 {
+  margin-bottom: 23px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section__food .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 66px 30px;
+  margin: 47px 0 44px;
+}
+
+.section__food .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.section__food .item--inactive {
+  opacity: 0.2;
+}
+
+.section__food .buttons {
+  display: flex;
+  justify-content: center;
+}

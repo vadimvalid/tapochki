@@ -1,0 +1,15 @@
+.section__share .container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 76px;
+  color: var(--black);
+}
+
+.section__share .item > p:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.section__share .item > p > * {
+  display: inline-block;
+}

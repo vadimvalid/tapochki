@@ -1,0 +1,58 @@
+:root {
+  --main-bg: #3d24d5;
+  --secondary-bg: #9e92ea;
+  --main-color: #fff;
+  --button-radius: 47px;
+  --black: #000;
+  --black-light: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.button {
+  all: unset;
+  padding: 10px 17px;
+  border: 1px solid;
+  border-radius: var(--button-radius);
+  font-size: 14px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.button--secondary {
+  background-color: var(--main-color);
+  color: var(--secondary-bg);
+  text-transform: uppercase;
+}
+
+.button--black {
+  color: var(--black);
+}
+
+.button--blue {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}

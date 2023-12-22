@@ -1,0 +1,43 @@
+.section__about .wrapper {
+  position: relative;
+  padding: 95px 0 288px;
+  background-color: var(--main-bg);
+  background-image: url("../images/bg-vertical.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section__about .wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/man.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section__about .block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 450px;
+  margin-bottom: 106px;
+}
+
+.section__about .block > img {
+  width: 380px;
+}
+
+.section__about .block__about {
+  max-width: 668px;
+  padding: 30px 40px;
+  background-color: var(--main-color);
+  border-radius: 82px;
+  font-size: 18px;
+  color: var(--black);
+}

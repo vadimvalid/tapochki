@@ -1,0 +1,30 @@
+.section__time .wrapper {
+  padding: 86px 0 76px;
+  background-color: var(--main-bg);
+  background-image: url("../images/building-2.png");
+  background-position: left bottom;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.section__time .items {
+  display: flex;
+  gap: 25px;
+}
+
+.section__time .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 168px;
+}
+
+.section__time .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section__time .bottom > img {
+  max-height: 134px;
+}

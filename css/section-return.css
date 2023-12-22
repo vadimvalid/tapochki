@@ -1,0 +1,14 @@
+.section__return .wrapper {
+  background-color: var(--main-bg);
+}
+
+.section__return .container {
+  display: flex;
+  flex-direction: column;
+  padding: 86px 0;
+
+  background-image: url("../images/return.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 215px;
+}

@@ -1,5 +1,6 @@
 .section__delivery {
   color: var(--black);
+  overflow: hidden;
 }
 
 .section__delivery .wrapper {
@@ -7,7 +8,7 @@
 }
 
 .section__delivery .container h2 {
-  margin-bottom: 23px;
+  margin-bottom: var(--main-space);
 }
 
 .section__delivery .goods {
@@ -18,16 +19,19 @@
 }
 
 .section__delivery .goods .item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   height: 340px;
-  padding: 120px 70px 0;
+  padding: 120px 56px 0;
   background-color: rgba(255, 172, 48, 0.2);
   border-radius: 230px 230px 0 0;
   background-image: url("../images/good-1.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto;
+  text-align: center;
+  aspect-ratio: 1/1;
 }
 
 .section__delivery .goods .item:nth-child(even) {
@@ -47,5 +51,8 @@
 }
 
 .section__delivery .goods .item > h4 {
+  font-family: "Akony", sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
   color: var(--main-color);
 }

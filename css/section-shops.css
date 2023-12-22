@@ -1,6 +1,6 @@
 .section__shops .wrapper {
   position: relative;
-  padding: 80px 0 224px;
+  padding: 60px 0 224px;
   background-color: var(--secondary-bg);
 }
 
@@ -19,7 +19,8 @@
 
 .section__shops .container {
   display: flex;
-  gap: 48px;
+  align-items: flex-start;
+  gap: 65px;
 }
 
 .section__shops .item {
@@ -29,22 +30,30 @@
   align-items: flex-start;
 }
 
+.section__shops .item:first-child {
+  padding-top: 20px;
+}
+
 .section__shops .item > h2 {
-  margin-bottom: 23px;
+  margin-bottom: var(--main-space);
 }
 
 .section__shops .item > p {
   margin-bottom: 35px;
+  font-size: 16px;
 }
 
 .section__shops .item > h4 {
   margin-bottom: 35px;
+  font-family: "Montserrat Bold";
   font-size: 18px;
 }
 
 .section__shops .item__logo {
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px 0;
 }
 
 .section__shops .item__logo img {

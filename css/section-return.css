@@ -5,10 +5,17 @@
 .section__return .container {
   display: flex;
   flex-direction: column;
-  padding: 86px 0;
-
+  padding: 86px 70px;
   background-image: url("../images/return.svg");
-  background-position: right bottom;
+  background-position: 85% bottom;
   background-repeat: no-repeat;
   background-size: 215px;
+}
+
+.section__return .item {
+  width: 60%;
+}
+
+.section__return .item h2 {
+  margin-bottom: var(--main-space);
 }

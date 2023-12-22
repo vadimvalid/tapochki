@@ -34,10 +34,12 @@
 }
 
 .section__about .block__about {
+  position: relative;
   max-width: 668px;
   padding: 30px 40px;
   background-color: var(--main-color);
   border-radius: 82px;
   font-size: 18px;
   color: var(--black);
+  z-index: 1;
 }

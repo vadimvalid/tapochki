@@ -1,15 +1,25 @@
 .section__share .container {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 42px;
   margin-bottom: 76px;
   color: var(--black);
 }
 
 .section__share .item > p:not(:last-child) {
-  margin-bottom: 23px;
+  margin-bottom: var(--main-space);
 }
 
 .section__share .item > p > * {
   display: inline-block;
+}
+
+.section__share .item {
+  flex: 1;
+  font-size: 16px;
+}
+
+.section__share .item:first-child {
+  flex: 0 1 390px;
+  padding: 0 20px;
 }

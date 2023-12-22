@@ -12,11 +12,19 @@
   gap: 25px;
 }
 
+.section__time .items .item {
+  flex: 1;
+}
+
+.section__time .items .item:not(:first-child) {
+  flex-grow: 1.5;
+}
+
 .section__time .container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 168px;
+  gap: 156px;
 }
 
 .section__time .bottom {
@@ -26,7 +34,7 @@
 }
 
 .section__time .bottom > img {
-  max-height: 134px;
+  width: 105px;
 }
 
 .section__time .item--wrap {
@@ -42,4 +50,11 @@
 
 .section__time .item--wrap > p:last-child {
   margin-top: 10px;
+}
+
+.section__time .bottom {
+  width: 142px;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Montserrat Light";
 }

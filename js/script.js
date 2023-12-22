@@ -20,4 +20,7 @@ const options = {
 
 const observer = new IntersectionObserver(observe, options);
 const images = document.querySelectorAll("img.lazy");
-images.forEach((image) => observer.observe(image));
+
+document.addEventListener("DOMContentLoaded", function () {
+  images.forEach((image) => observer.observe(image));
+});

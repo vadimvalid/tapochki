@@ -236,7 +236,7 @@ h2 {
   padding-left: 65px;
 }
 
-.section__top .item:last-child {
+.section__top .item:nth-child(2) {
   background-image: url("../images/building-3.png");
   background-position: right bottom;
 }
@@ -247,6 +247,17 @@ h2 {
 
 .section__top .item > p {
   font-family: "Montserrat Regular", sans-serif;
+}
+
+.section__top .order {
+  position: absolute;
+  right: 60px;
+  bottom: 35px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -278,6 +289,7 @@ h2 {
       url("../images/building-3.png");
     background-position: left bottom, right bottom;
     background-repeat: no-repeat, no-repeat;
+    background-size: 24% auto, 76% auto;
   }
 
   .section__top .item {
@@ -297,17 +309,26 @@ h2 {
     padding-left: 0;
   }
 
-  .section__top .item:last-child {
+  .section__top .item:nth-child(2) {
     background-image: none;
   }
 
-  .section__top .item:last-child > .item--inner {
+  .section__top .item:nth-child(2) > .item--inner {
     padding-right: 0;
   }
 
   .section__top .item--inner {
     gap: 6px;
     padding-top: 0;
+  }
+
+  .section__top .order {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 

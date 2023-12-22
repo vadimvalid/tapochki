@@ -61,13 +61,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .section__shops {
+    overflow-x: hidden;
+  }
+
   .section__shops .wrapper {
     padding: 60px 0 224px;
   }
 
   .section__shops .container {
     gap: 57px;
-    overflow: hidden;
   }
 
   .section__shops .item__logo {

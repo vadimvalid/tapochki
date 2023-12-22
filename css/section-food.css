@@ -68,6 +68,10 @@
     gap: 0 18px;
   }
 
+  .section__food .items img {
+    height: auto;
+  }
+
   .section__food .items .item:nth-last-child(2) {
     display: none;
   }

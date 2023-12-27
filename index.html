@@ -143,7 +143,7 @@
               <p>Эксклюзивно для жителей</p>
               <img
                 loading="lazy"
-                src="./images/plochad.png"
+                src="./images/plochad.svg"
                 alt="Царская площадь"
                 width="140"
               />
@@ -475,12 +475,18 @@
       <section id="share" class="section__share">
         <div class="container">
           <div class="item">
-            <img
-              loading="lazy"
-              class="lazy"
-              src="./images/iphone.png"
-              alt="phone"
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/iphone.png" />
+              <source
+                media="(min-width: 768px) and (max-width: 1200px)"
+                srcset="./images/iphone-2x.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/iphone-3x.png"
+              />
+              <img src="./images/iphone.png" alt="iphone" />
+            </picture>
           </div>
           <div class="item">
             <p>Удобный мобильный интерфейс.</p>
@@ -502,17 +508,21 @@
             <button class="button button--blue">Сделать первый заказ</button>
           </div>
           <div class="item--image">
-            <img
-              loading="lazy"
-              class="lazy"
-              src="./images/woman.png"
-              alt="women"
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/woman.png" />
+              <source
+                media="(min-width: 768px) and (max-width: 1200px)"
+                srcset="./images/woman-2x.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/woman-3x.png"
+              />
+              <img src="./images/woman.png" alt="women" />
+            </picture>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>

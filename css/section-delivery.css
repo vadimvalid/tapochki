@@ -26,7 +26,11 @@
   padding: 120px 56px 0;
   background-color: rgba(255, 172, 48, 0.2);
   border-radius: 230px 230px 0 0;
-  background-image: url("../images/good-1.png");
+  background-image: image-set(
+    "../images/good-1.png" 1x,
+    "../images/good-1-2x.png" 2x,
+    "../images/good-1-3x.png" 3x
+  );
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -39,15 +43,27 @@
 }
 
 .section__delivery .goods .item:nth-child(2) {
-  background-image: url("../images/good-2.png");
+  background-image: image-set(
+    "../images/good-2.png" 1x,
+    "../images/good-2-2x.png" 2x,
+    "../images/good-2-3x.png" 3x
+  );
 }
 
 .section__delivery .goods .item:nth-child(3) {
-  background-image: url("../images/good-3.png");
+  background-image: image-set(
+    "../images/good-3.png" 1x,
+    "../images/good-3-2x.png" 2x,
+    "../images/good-3-3x.png" 3x
+  );
 }
 
 .section__delivery .goods .item:nth-child(4) {
-  background-image: url("../images/good-4.png");
+  background-image: image-set(
+    "../images/good-4.png" 1x,
+    "../images/good-4-2x.png" 2x,
+    "../images/good-4-3x.png" 3x
+  );
 }
 
 .section__delivery .goods .item > h4 {

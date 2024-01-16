@@ -248,6 +248,11 @@ h2 {
   z-index: 2;
 }
 
+.section__top .item:last-child img {
+  object-fit: scale-down;
+  object-position: bottom;
+}
+
 .section__top .item > p {
   font-family: "Montserrat Regular", sans-serif;
 }
@@ -289,6 +294,11 @@ h2 {
 
   .section__top .item:nth-child(3) {
     order: 3;
+  }
+
+  .section__top .item:last-child img {
+    height: 100px;
+    object-fit: none;
   }
 
   .section__top .item:nth-child(2) > .item--inner {
